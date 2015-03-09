@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kalkulator BMI</title>
+
+    <style>
+        label {
+            display: inline-block;
+            width: 60px;
+        }
+    </style>
+
+    <script>
+        function CalculateBMI(cm, kg, resultElementName) {
+            kg = Number(kg);
+            cm = Number(cm);
+
+            var meters = cm / 100;
+            var BMI = "" + Math.round(10 * kg / (meters * meters)) / 10;
+
+            var resultElement = document.getElementById(resultElementName);
+            resultElement.innerHTML = BMI.replace(".", ",");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Kalkulator BMI</h1>
+    <form action="#" id="kalkulatorBMI">   //co to za # i po co?
+
+        <label for="cm">Wzrost:</label>
+        <input name="cm"> cm
+        <br>
+
+        <label for="kg">Waga:</label>
+        <input name="kg"> kg
+        <br>
+        <br>
+
+        <input type="button" name="calc" value="Oblicz" onclick="CalculateBMI(this.form.cm.value, this.form.kg.value, 'result')" /> // >>
+    </form>
+    <p>Twój wskaźnik BMI wynosi:
+        <output form="bmiCalculator" for="cm kg" id="result"></output>  // ???
+    </p>
+
+    <table cellpadding="5" cellspacing="0" border="1">
+        <tr>
+            <td><b>BMI</b>
+            </td>
+            <td><b>Werdykt</b>
+            </td>
+        </tr>
+        <tr>
+            <td>Poniżej 18,5</td>
+            <td>Niedowaga</td>
+        </tr>
+        <tr>
+            <td>18,5 &#8211; 24,9</td>
+            <td>W normie</td>
+        </tr>
+        <tr>
+            <td>25,0 &#8211; 29,9</td>
+            <td>Nadwaga</td>
+        </tr>
+        <tr>
+            <td>30,0 i więcej</td>
+            <td>Otyłość</td>
+        </tr>
+    </table>
+</body>
+
+</html>
