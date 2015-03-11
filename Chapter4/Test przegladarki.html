@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wykrywanie obslugi</title>
+    <meta charset="UTF-8">
+    <script src="modernizr-latest.js"></script>
+  
+</head>
+<body>
+<p>Werdykt brzmi... <span id="result"></span></p>
+    
+    <script>
+    var result = document.getElementById("result");
+        if  (Modernizr.draganddrop) {
+        result.innerHTML = "Hurra! przegladarka obsluguje wlasnosc drag and drop";
+        }
+        else {
+        result.innerHTML = "Niestety twoja amrna przegladarka nei daje rady";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+  font-family: 'Palatino Linotype', serif;
+}
+
+h1 {
+  font-size: x-large;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 2px;
+}
+
+.separatedSection {
+  margin-top: 20px;
+}

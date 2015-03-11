@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Opiekun zwierząt w zoo</title>
+    <link href="FormularzZoo.css" rel="stylesheet">
+    <style>
+        .Label {
+            display: inline-block;
+            width: 125px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Formularz podania o pracę w zoo</h2>
+    <form id="zooKeeperForm" action="#">
+        <p><i>Proszę wypełnić ten formularz. Obowiązkowe pola oznaczono znakiem </i><em>*</em>.</p>
+        <fieldset>
+            <legend>Jakie zwierzę lubisz najbardziej?</legend>
+            <datalist id="animalChoices">
+                <span class="Label">Wybierz zwierzę:</span>
+                <select id="favoriteAnimalPreset">
+                    <option label="Koń" value="koń">
+                        <option label="Zebra" value="zebra">
+                            <option label="Kot" value="kot">
+                                <option label="Komar" value="komar">
+                                    <option label="Gąsienica" value="gąsienica">
+                                        <option label="Anakonda" value="anakonda">
+                                            <option label="Człowiek" value="człowiek">
+                                                <option label="Słoń" value="słoń">
+                                                    <option label="Gnu" value="gnu">
+                                                        <option label="Gołąb" value="gołąb">
+                                                            <option label="Krab" value="krab">
+                </select>
+                <br>
+                <span class="Label">Lub wpisz własnego ulubieńca: </span>
+            </datalist>
+            <input list="animalChoices" id="favoriteAnimal">
+        </fieldset>
+        <p>
+            <input type="submit" value="Wyślij formularz">
+        </p>
+    </form>
+</body>
+
+</html>
