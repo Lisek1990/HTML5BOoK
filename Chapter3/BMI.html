@@ -7,20 +7,7 @@
     <title>Kalkulator BMI</title>
 <link href="BMI.css" rel="stylesheet">
 <script src="BMI.js"></script>  
-
-    <script>
-        function CalculateBMI(cm, kg, resultElementName) {
-            kg = Number(kg);
-            cm = Number(cm);
-
-            var meters = cm / 100;
-            var BMI = "" + Math.round(10 * kg / (meters * meters)) / 10;
-
-            var resultElement = document.getElementById(resultElementName);
-            resultElement.innerHTML = BMI.replace(".", ",");
-        }
-    </script>
-
+ 
 </head>
 
 <body>
