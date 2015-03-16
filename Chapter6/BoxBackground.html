@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Tło</title>
+
+<style>
+body {
+  font-family: Verdana;
+  font-size: 15px;
+}
+
+.decoratedBox {
+  min-width: 320px;
+  min-height: 270px;
+  border: 1px solid gray;
+  margin: 20px;
+
+  background: transparent;
+  background-image: url('top-left.png'), url('bottom-right.png');
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.decoratedBox p {
+  margin: 50px;
+  color: rgb(255,104,0);
+  font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="decoratedBox">
+  <p>W tym kontenerze zespolono dwa obrazy tła, które przesunięto do jego lewego górnego i prawego dolnego rogu.
+  </p>
+  <p>Różnice między tym, a pojedynczym obrazem tła zauważysz, gdy zmniejszysz okno.</p>
+</div>
+
+</body>
+</html>

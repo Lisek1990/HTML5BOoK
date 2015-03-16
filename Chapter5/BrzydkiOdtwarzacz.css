@@ -1,0 +1,36 @@
+h1 {
+  font-size: x-large;
+  margin: 6px 0px 6px 0px;
+}
+
+video {
+  border: double 8px lightgray;
+}
+
+.videoContainer {
+  max-width: 445px;
+}
+
+#positionBar {
+height: 30px;
+  color: white;
+  font-weight: bold;
+  background: steelblue;
+  text-align: center;
+}
+
+#positionBar span {
+  display: inline-block;
+  margin-top: 7px;
+}
+
+#durationBar {
+  border: solid 1px black;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#bufferBar {
+  background: lightsteelblue;
+  position: absolute;
+}

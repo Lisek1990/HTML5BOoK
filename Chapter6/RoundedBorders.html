@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Zaokrąglone rogi</title>
+
+<style>
+body {
+  font-family: Verdana;
+  font-size: 15px;
+}
+
+div {
+  margin: 20px;
+  padding: 20px;
+  background: khaki;
+  border: 2px solid black;
+}
+
+.rounded1 {
+  border-top-right-radius: 50px;
+}
+
+.rounded2 {
+  border-top-right-radius: 150px 50px;
+}
+
+.rounded3 {
+  border-top-left-radius: 150px 30px;
+  border-top-right-radius: 100px 50px;
+  border-bottom-left-radius: 40px 90px;
+  border-bottom-right-radius: 20px 75px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="rounded1">
+  <b>Zaokrąglij prawy górny róg:</b><br>
+  border-top-right-radius: 50px;
+</div>
+
+<div class="rounded2">
+  <b>Rozciągnij go...</b><br>
+  border-top-right-radius: 150px 50px;
+</div>
+
+<div class="rounded3">
+  <b>Albo po prostu zaszalej i zmień wszystkie rogi na raz:</b><br>
+  border-top-left-radius: 150px 30px;
+  border-top-right-radius: 100px 50px;
+  border-bottom-left-radius: 40px 90px;
+  border-bottom-right-radius: 20px 75px;
+</div>
+
+</body>
+</html>

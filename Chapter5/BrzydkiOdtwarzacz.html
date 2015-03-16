@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <link href="BrzydkiOdtwarzacz.css" rel="stylesheet">
+    <script src="BrzydkiOdtwarzacz.js"></script>
+    <title>Paskudny odtwarzacz</title>
+
+
+
+</head>
+
+<body>
+    <h1>Najpaskudniejszy odtwarzacz świata</h1>
+    <div class="videoContainer">
+        <video id="videoPlayer" ontimeupdate="progressUpdate()">
+            <source src="butterfly.mp4" type="video/mp4">
+            <source src="butterfly.ogv" type="video/ogg">
+        </video>
+    </div>
+
+    <div class="barContainer">
+        <div id="durationBar">
+            <div id="positionBar">
+                <span id="displayStatus">Bezczynny</span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        &nbsp;&nbsp;&nbsp;
+        <button onclick="play()">Graj</button>
+        <button onclick="pause()">Pauza</button>
+        <button onclick="stop()">Stop</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="speedUp()">Przyspiesz</button>
+        <button onclick="slowDown()">Spowolnij</button>
+        <button onclick="normalSpeed()">Zwykła prędkość</button>
+    </div>
+
+
+    </div>
+</body>
+
+</html>

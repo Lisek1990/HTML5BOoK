@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efekty dźwiękowe</title>
+    <link href="EfektyDzwiekowe.css" rel="stylesheet">
+    <script src="EfektyDzwiekowe.js"></script>
+
+</head>
+
+<body>
+    <audio id="audio1">
+        <source src="boing1.wav" type="audio/wav">
+            <source src="beep.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio2">
+        <source src="boing2.wav" type="audio/wav">
+            <source src="beep.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio3">
+        <source src="boing3.wav" type="audio/wav">
+            <source src="beep.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="backgroundMusic" loop>
+        <source src="theowlnamedorion.mp3" type="audio/mp3">
+            <source src="theowlnamedorion.ogg" type="audio/ogg">
+    </audio>
+
+    <canvas id="canvas" width="400" height="300">
+    </canvas>
+
+    <div>
+        <button onclick="addBall()">Dodaj piłkę</button>
+        <button onclick="clearBalls()">Wyczyść ramy</button>
+    </div>
+    <div>
+        Promień piłki:
+        <input id="ballSize" type="number" min="0" max="50" value="15">
+        <input id="connectedBalls" type="checkbox">Połącz piłki
+        <br>
+    </div>
+
+    <p><small>Muzykę skomponował DanoSongs.com (<a href="http://www.danosongs.com" target="_blank">http://www.danosongs.com</a>)</small>
+    </p>
+</body>
+
+</html>
