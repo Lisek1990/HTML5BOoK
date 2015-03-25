@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Tekst</title>
+
+  <style>
+canvas {
+  border: 1px dashed black;
+}
+  </style>
+
+  <script>
+ 
+window.onload = function() {
+  var canvas = document.getElementById("drawingCanvas");
+  var context = canvas.getContext("2d");
+
+  context.textBaseline = "top";
+  context.font = "bold 20px Arial";
+  context.fillStyle = "black";
+  context.fillText("Utknąłem w płótnie. Niech ktoś mnie stąd wyciągnie!", 10, 10);
+
+  context.font = "bold 40px Verdana,sans-serif";
+  context.lineWidth = 1;
+  context.strokeStyle = "red";
+  context.strokeText("Jestem KONTUREM", 20, 50);
+};
+
+  </script>
+</head>
+
+<body>
+  <canvas id="drawingCanvas" width="520" height="150"></canvas>
+</body>
+</html>

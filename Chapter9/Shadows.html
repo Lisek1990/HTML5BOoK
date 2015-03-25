@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Cienie</title>
+
+  <style>
+canvas {
+  border: 1px dashed black;
+}
+
+img {
+  display: none;
+}
+  </style>
+
+  <script>
+ 
+window.onload = function() {
+  var canvas = document.getElementById("drawingCanvas");
+  var context = canvas.getContext("2d");
+
+  // Rysuje cień prostokąta. 
+context.rect(20, 20, 200, 100); 
+context.fillStyle = "#8ED6FF"; 
+context.shadowColor = "#bbbbbb"; 
+context.shadowBlur = 20;
+ context.shadowOffsetX = 15;
+context.shadowOffsetY = 15; 
+context.fill();
+ // Rysuje cień gwiazdy. 
+context.shadowOffsetX = 10; 
+context.shadowOffsetY = 10; 
+context.shadowBlur = 4;
+ img = document.getElementById("star");
+ context.drawImage(img, 250, 30);
+context.textBaseline = "top"; 
+context.font = "bold 20px Arial";
+// Rysuje trzy wersje cieniowanego tekstu. 
+context.shadowBlur = 3; 
+context.shadowOffsetX = 2; 
+context.shadowOffsetY = 2; 
+context.fillStyle = "steelblue";
+context.fillText("Oto delikatny, odrobinę staromodny cień.", 10, 175);
+context.shadowBlur = 5; 
+context.shadowOffsetX = 20; 
+context.shadowOffsetY = 20; 
+context.fillStyle = "green";
+context.fillText("Oto oddalony cień...", 10, 225);
+context.shadowBlur = 15; 
+context.shadowOffsetX = 0;
+ context.shadowOffsetY = 0;
+context.shadowColor = "black"; 
+context.fillStyle = "white";
+context.fillText("Ten cień nie jest oddalony. Tworzy efekt poświaty.", 10, 300);
+
+};
+
+  </script>
+</head>
+
+<body>
+  <canvas id="drawingCanvas" width="500" height="350"></canvas>
+  <img id="star" src="star.png">
+</body>
+</html>
